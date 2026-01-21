@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Jahzz's Homepage</title>
 </head>
+
 <body>
-    
+    <audio id="clicksound" src="./static/MinecraftClicksound.mp3"></audio>
+    <script type="module">
+        import { get_skin, PoseType } from './js/lunar.js';
+
+        const imgSrc = get_skin('jqhz')(PoseType.MOJANG_AVATAR);
+        document.querySelector('img').src = imgSrc;
+
+        const clickSound = document.getElementById('clicksound');
+        function PlayClick() {
+            clickSound.load();
+            clickSound.play();
+
+        }
+
+        document.body.addEventListener('click', PlayClick);
+    </script>
+    <nav>
+        <div>
+            <h1>
+                Jahzz's Homepage
+            </h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+        </div>
+    </nav>
+
+    <hr>
+    <!-- <h2>a</h2> -->
+    <main>
+        <h2>Hobbies</h2>
+    </main>
+    <!-- ### works
+     utd clubs
+     lunarly
+     lyrical
+     personal tutoring
+
+    ### programming languages:
+    React.js, HTML, CSS, JavaScript, Python, C++, Java, SQL, R  
+
+    ### hobbies 
+    minecraft [yt link]
+    10:28 RSG, 8:24 MCSR Ranked
+
+    anime [anilist link] # i could look into adding my link tree here or smth
+    CSM, Dandadan, Made in Abyss etc
+
+    linux
+    fedora 41 linux with niri wm and noctalia shell theme, would love to rice more in the future
+    still using VScode because i love my arrow keys
+
+    music [spotify link]
+    New Jeans, Arctic Monkeys, The Smiths, Frederic Chopin, S3RL, Lamp, 2Hollis, The Hellp etc
+    -->
+    <img alt="Minecraft Skin">
+     <footer>
+        <hr>
+        <p>&copy; 2026 Jahzz.</p>
+    </footer>
 </body>
 </html>

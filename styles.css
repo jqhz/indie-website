@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    cursor: url('/static/MinecraftCursor.png') 16 16, auto;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    max-width: 768px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 4rem;
+}
+
+.nav-links {
+    line-height: 2rem;
+}
