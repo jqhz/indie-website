@@ -8,7 +8,7 @@
 
 body {
     background-color: black;
-    color: white;
+    color: #eeeeee;
     max-width: 768px;
     justify-content: center;
     margin: 0 auto;
@@ -25,4 +25,8 @@ img {
 
 .nav-links {
     line-height: 2rem;
+}
+
+h1::after {
+    content: '####################'
 }
