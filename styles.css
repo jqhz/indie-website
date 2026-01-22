@@ -28,5 +28,9 @@ img {
 }
 
 h1::after {
-    content: '####################'
+    content: '====================';
+    display: block;
+    /* margin-top: 0.5rem; */
+    font-size: 0.8;
+    letter-spacing: 0em;
 }
