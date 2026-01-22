@@ -5,13 +5,20 @@
     cursor: url('/static/MinecraftCursor.png') 16 16, auto;
 
 }
-
+@font-face {
+    font-family: 'Minecraftia';
+    /* Ensure the path leads to your .otf file */
+    src: url('./static/fonts/Minecraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background-color: black;
     color: #eeeeee;
     max-width: 768px;
     justify-content: center;
     margin: 0 auto;
+    font-family: 'Minecraftia';
 }
 
 nav {
@@ -34,3 +41,4 @@ h1::after {
     font-size: 0.8;
     letter-spacing: 0em;
 }
+
