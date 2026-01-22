@@ -7,7 +7,6 @@
 }
 @font-face {
     font-family: 'Minecraftia';
-    /* Ensure the path leads to your .otf file */
     src: url('./static/fonts/Minecraft.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -95,4 +94,24 @@ h1::after {
 
 h2 {
     margin: 2rem 0 0 0;
+}
+
+.blinkies {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    margin-top: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.blinkies img {
+    height: 2rem;
+    width: auto;
+    display: block;
+}
+
+footer p{
+    /* text-align: center; */
+    /* margin: 2rem 0 1rem 0; */
 }
